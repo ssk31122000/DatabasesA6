@@ -4,9 +4,7 @@
   padding: 0;
   text-decoration: none;
 }
-body{
-  background: linear-gradient(100deg,#2980b8, #50C878);
-}
+
 .sidebar{
   position: fixed;
   width: 240px;
@@ -115,4 +113,23 @@ label #cancel{
     opacity: 1;
     visibility: visible;
   }
+}
+
+.card{
+    margin: 12px;
+}
+
+.float-child_1 {
+    width:  30%;
+    float: left;
+    padding: 20px;
+}  
+
+.float-child_2 {
+    width:  70%;
+    float: left;
+    padding: 20px;
+} 
+body{
+  background: linear-gradient(100deg,#2980b8, #50C878);
 }
