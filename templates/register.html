@@ -1,50 +1,55 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Register Form</title>
-    <link rel="stylesheet" href="register_style.css">
-  </head>
-  <body>
-    <div class="center">
-      <h1>Register</h1>
-      <form method="post">
-        <div class="txt_field">
-          <input type="text" required>
-          <span></span>
-          <label>First Name</label>
-        </div>
-        <div class="txt_field">
-          <input type="text" required>
-          <span></span>
-          <label>Last Name</label>
-        </div>
-        <div class="txt_field">
-          <input type="Number" required>
-          <span></span>
-          <label>Phone Number</label>
-        </div>
-        <div class="txt_field">
-          <input type="text" required>
-          <span></span>
-          <label>Address</label>
-        </div>
-        <div class="txt_field">
-          <input type="Number" required>
-          <span></span>
-          <label>Pincode</label>
-        </div>
-        <div class="txt_field">
-          <input type="text" required>
-          <span></span>
-          <label>Country</label>
-        </div>
-        <input type="submit" value="Submit">
-        <div class="signup_link">
-          Try signing in? <a href="index.html">Login</a>
-        </div>
-      </form>
-    </div>
+{% extends 'base.html' %}
 
-  </body>
-</html>
+
+{% block head %}
+    <title>Register Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register_style.css') }}">
+
+{% endblock %}
+
+
+{% block body %}
+  <div class="center">
+    <h1>Register</h1>
+    <form method="post" action="/register">
+      <div class="txt_field">
+        <input id="firstname" name="firstname" type="text" required>
+        <span></span>
+        <label>First Name</label>
+      </div>
+      <div class="txt_field">
+        <input id="lastname" name="lastname" type="text" required>
+        <span></span>
+        <label>Last Name</label>
+      </div>
+      <div class="txt_field">
+        <input id="phone" name="phone" type="Number" required>
+        <span></span>
+        <label>Phone Number</label>
+      </div>
+      <div class="txt_field">
+        <input id="address" name="address" type="text" required>
+        <span></span>
+        <label>Address</label>
+      </div>
+      <div class="txt_field">
+        <input id="pincode" name="pincode" type="Number" required>
+        <span></span>
+        <label>Pincode</label>
+      </div>
+      <div class="txt_field">
+        <input id="country" name="country" type="text" required>
+        <span></span>
+        <label>Country</label>
+      </div>
+      <input type="submit" value="Submit">
+      <div class="signup_link">
+        Try signing in? <a href="/">Login</a>
+      </div>
+    </form>
+  </div>
+
+{% endblock %}
+
+
+
