@@ -18,17 +18,20 @@
               <i class="fas fa-times" id="cancel"></i>
             </label>
             <div class="sidebar">
-            <header>Categories</header>
+            <header>Menu</header>
             <!-- <a href="#" class="active">
               <i class="fas fa-qrcode"></i>
               <span>c1</span>
             </a> -->
-            {% for cat in category %}
+          
             <a href="#">
               <i class="fas fa-link"></i>
-              <span>{{cat[1]}}</span>
+              <span>Add Product</span>
             </a>
-            {% endfor %}
+            <a href="/">
+              <i class="fas fa-link"></i>
+              <span>Logout</span>
+            </a>
           </div>
       </div>  
 
@@ -40,7 +43,9 @@
           <div class="card-body">
             <h5 class="card-title">{{prod[1]}}</h5>
             <p class="card-text">{{prod[2]}}</p>
-            <a href="/{{userid}}/{{prod[0]}}" class="btn btn-primary">Add to Cart</a>
+            <p class="card-text">{{prod[3]}} Rs.</p>
+            <p class="card-text">Vendor ID :{{prod[4]}}</p>
+            <a href="/{{userid}}/{{prod[5]}}" class="btn btn-primary">Add to Cart</a>
           </div>
         </div>
         {% endfor %}
