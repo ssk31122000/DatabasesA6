@@ -19,55 +19,28 @@
             </label>
             <div class="sidebar">
             <header>Categories</header>
-            <a href="#" class="active">
+            <!-- <a href="#" class="active">
               <i class="fas fa-qrcode"></i>
-              <span>Fashion</span>
-            </a>
+              <span>c1</span>
+            </a> -->
+            {% for cat in category %}
             <a href="#">
               <i class="fas fa-link"></i>
-              <span>Electronics</span>
+              <span>{{cat[1]}}</span>
             </a>
-            <a href="#">
-              <i class="fas fa-stream"></i>
-              <span>Furniture</span>
-            </a>
-            <a href="#">
-               <i class="fas fa-calendar"></i>
-              <span>Grocery</span>
-            </a>
-            <a href="#">
-              <i class="far fa-question-circle"></i>
-              <span>Sports</span>
-            </a>
-            <a href="#">
-              <i class="fas fa-sliders-h"></i>
-              <span>Kitchen</span>
-            </a>
-            <a href="#">
-              <i class="far fa-question-circle"></i>
-              <span>Books</span>
-            </a>
-            <a href="#">
-              <i class="far fa-question-circle"></i>
-              <span>Baby Products</span>
-            </a>
-            <a href="#">
-              <i class="far fa-envelope"></i>
-              <span>Arts and Crafts</span>
-            </a>
+            {% endfor %}
           </div>
       </div>  
 
 <div class="float-child_2">
       <div class="row">
 
-        {% for i in range(10) %}
+        {% for prod in products %}
         <div class="card" style="width: 20rem;">
-          <img src="{{ url_for('static', filename='css/summer_collection.jpg') }}" class="card-img-top" alt="summer_collection" style="height:15rem;">
           <div class="card-body">
-            <h5 class="card-title">{{i+1}}</h5>
-            <p class="card-text">Fresh styles to beat the heat this summer by top brands</p>
-            <a href="#" class="btn btn-primary">Explore</a>
+            <h5 class="card-title">{{prod[1]}}</h5>
+            <p class="card-text">{{prod[2]}}</p>
+            <a href="/{{userid}}/{{prod[0]}}" class="btn btn-primary">Add to Cart</a>
           </div>
         </div>
         {% endfor %}
