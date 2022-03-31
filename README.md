@@ -33,34 +33,22 @@ Below we have added some snapshots of Insert, Update and Delete operations for U
 
 
 
+![image](https://drive.google.com/uc?export=view&id=1HPBy0Kb6Pdjsg7XDTEIPBhHy97aSqIuX)
+
+![image](https://drive.google.com/uc?export=view&id=1B4BdYVlZsXMn5o33-fP4gXmQ-tivd7Ds)
+
+![image](https://drive.google.com/uc?export=view&id=1LrsPSy_YXuC8ogShXPMW13ANkKwG8dEv)
+
+![image](https://drive.google.com/uc?export=view&id=1WozvdCAjDg6Z4oIC9tSEhHrtJkIVo9iZ)
+
+![image](https://drive.google.com/uc?export=view&id=1CCcrIs4eMFi0PNzG0gE04ZQgbxH9aAf_)
 
 
-User:
-Insert
-![image](https://drive.google.com/uc?export=view&id=1-QQ-PfhHcsLMbNOtIlTn0AYOnvnpVbTV)
-
-
-
-
-Update 
-
-
-
-Delete 
-
-Vendor:
-
-Insert
+![image](https://drive.google.com/uc?export=view&id=1R1DeKNImyvV1F7AMQavkbcl301vxpv3S)
 
 
 
 
-
-Update 
-
-
-
-Delete
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Contribution(100) Assignment 6
